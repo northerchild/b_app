@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import axios from 'axios';
+import Frase from './Components/Frase';
+
 
 function App() {
   const [frase, obtenerFrase] = useState({});
@@ -16,8 +18,8 @@ function App() {
     },[]
   );
   return (
-    <div>
-
+    <div className="contenedor">
+      <Frase frase={frase}/>
     </div>
   );
 }
